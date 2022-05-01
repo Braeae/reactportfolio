@@ -16,7 +16,12 @@ const Sidebar = () => (
       <img src={Logo} alt="logo" />
     </Link>
     <nav>
-      <NavLink exact="true" activeclassname="active" to="/">
+      <NavLink
+        exact="true"
+        activeclassname="active"
+        to="/"
+        className="home-link"
+      >
         <FontAwesomeIcon icon={faHome} color="#fadadd" />
       </NavLink>
       <NavLink
@@ -36,6 +41,18 @@ const Sidebar = () => (
         <FontAwesomeIcon icon={faEnvelope} color="#fadadd" />
       </NavLink>
     </nav>
+    <ul>
+      <li>
+        <a href="https://github.com/" target="_blank" rel="noreferrer">
+          <FontAwesomeIcon icon={faGithub} color="#fadadd" />
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">
+          <FontAwesomeIcon icon={faLinkedin} color="#fadadd" />
+        </a>
+      </li>
+    </ul>
   </div>
 )
 
