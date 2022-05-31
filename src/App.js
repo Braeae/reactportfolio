@@ -1,15 +1,21 @@
 import "./App.scss"
 import { Routes, Route } from "react-router-dom"
 import Layout from "./components/Layout"
+import Home from "./components/Home"
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Layout />} />
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+        </Route>
+      </Routes>
+    </>
   )
 }
 
 export default App
 
-// To be continued in Building left sidebar section 9.11 min
+//    <Route path="about" element={<About />} />
+//    <Route path="/contact" element={<Contact />} />
