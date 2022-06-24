@@ -1,13 +1,8 @@
 import { Link, NavLink } from "react-router-dom"
 import "./index.scss"
-import Logo from "../assets/images/logo-b.png"
+import Logo from "../../assets/images/logo-b.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import {
-  faLinkedin,
-  faGithub,
-  faYoutube,
-  faSkype,
-} from "@fortawesome/free-brands-svg-icons"
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faHome, faUser, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
 const Sidebar = () => (
